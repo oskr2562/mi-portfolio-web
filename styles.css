@@ -1,0 +1,12 @@
+body { 
+    font-family: Arial; margin: 0; padding: 0; 
+}
+    header { 
+        background-color: #333; color: white; padding: 1rem; text-align: center; 
+    }
+    section { 
+        padding: 2rem; 
+    }
+    .cta { 
+        background: #28a745; color: white; padding: 1rem; text-align: center; margin-top: 2rem; 
+    }
