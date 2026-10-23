@@ -1,19 +1,75 @@
-<!-- index.html -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="styles.css">
-    <title>Servicios Web</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio de Oscar Barrios: proyectos personales y camino de aprendizaje en desarrollo web.">
+  <title>Oscar Barrios — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header><h1>Creación de Sitios Web</h1></header>
-    <section>
-    <h2>¿Qué ofrezco?</h2>
-    <p>Diseño sitios web simples, rápidos, responsivos y optimizados para dispositivos móviles. Ideal para landing pages o portafolios personales.</p>
-    <div class="cta">¡Contactame para tu sitio web!</div>
-    </section>
+  <div class="site-shell">
+    <nav class="nav" aria-label="Navegación principal">
+      <a class="wordmark" href="#inicio"><span class="mark">OB</span><span>Oscar Barrios</span></a>
+      <div class="nav-links"><a href="#sobre-mi">Sobre mí</a><a href="#proyectos">Proyectos</a><a href="#contacto">Contacto</a></div>
+      <a class="nav-cta" href="https://www.linkedin.com/in/oscar-barrios-ar/" target="_blank" rel="noreferrer">Conectemos <span>↗</span></a>
+    </nav>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> DESARROLLO WEB · ROSARIO, ARGENTINA</div>
+          <h1>Hola, soy Oscar.<br><span>Desarrollo web</span> con foco en soluciones útiles.</h1>
+          <p class="hero-lede">Construyo proyectos propios a partir de necesidades concretas. BarberOS es mi proyecto actual: una aplicación para organizar los turnos de una barbería.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#proyectos">Ver proyectos <span>↓</span></a><a class="button button-quiet" href="https://github.com/oskr2562" target="_blank" rel="noreferrer">Mi GitHub <span>↗</span></a></div>
+          <div class="hero-note"><span class="note-line"></span><span>Proyectos propios · BarberOS en desarrollo</span></div>
+        </div>
+        <div class="hero-art" aria-label="Ilustración decorativa de una pantalla de trabajo">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="terminal-card">
+            <div class="terminal-top"><div class="window-dots"><i></i><i></i><i></i></div><span>barberos.js</span><span class="terminal-lock">PERSONAL</span></div>
+            <div class="code-lines"><p><span class="ln">01</span><span class="purple">const</span> proyecto = <span class="green">"BarberOS"</span>;</p><p><span class="ln">02</span><span class="purple">const</span> estado = <span class="green">"en desarrollo"</span>;</p><p class="blank"><span class="ln">03</span></p><p><span class="ln">04</span><span class="blue">function</span> construirSoluciones() {</p><p><span class="ln">05</span>&nbsp;&nbsp; construir();</p><p><span class="ln">06</span>&nbsp;&nbsp; mejorar();</p><p><span class="ln">07</span>}</p><p class="cursor-line"><span class="ln">08</span><span class="cursor"></span></p></div>
+            <div class="terminal-footer"><span><b></b> PROYECTO ACTIVO</span><span>ROSARIO, AR</span></div>
+          </div>
+          <div class="float-chip chip-one"><span class="chip-icon">✳</span><span><b>Aprender haciendo</b><small>Un paso a la vez</small></span></div>
+          <div class="float-chip chip-two"><span class="chip-icon chip-green">⌘</span><span><b>BarberOS</b><small>En construcción</small></span></div>
+          <span class="hero-index">01 / 03</span>
+        </div>
+      </section>
+
+      <section class="intro section-pad" id="sobre-mi">
+        <div class="section-kicker"><span>01</span> / SOBRE MÍ</div>
+        <div class="intro-grid"><h2>Experiencia práctica,<br><em>aplicada a nuevas ideas.</em></h2><div class="intro-copy"><p>Mi recorrido empezó en trabajos operativos, logística y atención. Ahí aprendí a organizar tareas, cuidar los detalles y resolver problemas concretos.</p><p>Hoy llevo esa base al desarrollo web mediante proyectos propios. Me interesa entender una necesidad, diseñar una solución y convertirla en una herramienta clara y útil.</p><div class="values"><span>JavaScript</span><span>Resolución de problemas</span><span>Mejora continua</span></div></div></div>
+      </section>
+
+      <section class="projects section-pad" id="proyectos">
+        <div class="section-kicker"><span>02</span> / PROYECTOS</div>
+        <div class="section-heading"><div><h2>Lo que estoy<br><em>construyendo.</em></h2></div><p>Proyectos personales para aprender, probar ideas y mejorar con cada iteración.</p></div>
+        <article class="project-card">
+          <div class="project-visual">
+            <div class="visual-caption"><span>VISTA CONCEPTUAL</span><span>BARBEROS / 01</span></div>
+            <div class="app-window">
+              <div class="app-sidebar"><div class="app-logo">B<span>.</span></div><div class="side-active">▦</div><div>◷</div><div>♙</div><div class="side-bottom">⚙</div></div>
+              <div class="app-main"><div class="app-head"><div><small>ESPACIO DE TRABAJO</small><h3>Agenda</h3></div><div class="app-date">OCTUBRE <b>2026</b></div></div><div class="calendar-head"><span>LUN</span><span>MAR</span><span>MIÉ</span><span>JUE</span><span>VIE</span></div><div class="calendar-grid"><div class="slot"><b>09:00</b><small>Disponible</small></div><div class="slot booked"><b>10:30</b><small>Turno reservado</small></div><div class="slot"><b>12:00</b><small>Disponible</small></div><div class="slot booked"><b>14:30</b><small>Turno reservado</small></div><div class="slot"><b>16:00</b><small>Disponible</small></div><div class="slot"><b>09:30</b><small>Disponible</small></div><div class="slot booked"><b>11:00</b><small>Turno reservado</small></div><div class="slot"><b>13:00</b><small>Disponible</small></div><div class="slot"><b>15:30</b><small>Disponible</small></div><div class="slot booked"><b>17:00</b><small>Turno reservado</small></div></div></div>
+            </div>
+            <div class="visual-footnote">Ilustración de referencia; no es una captura del sistema.</div>
+          </div>
+          <div class="project-info"><div class="project-topline"><span class="project-number">PROYECTO 01</span><span class="pill"><i></i> EN DESARROLLO</span></div><h3>BarberOS</h3><p class="project-summary">Una aplicación personal que estoy desarrollando para ayudar a organizar los turnos de una barbería.</p><p class="project-detail">La idea contempla que los clientes puedan solicitar turnos y que el negocio gestione su agenda. El proyecto continúa en desarrollo y estoy revisando y mejorando sus distintas partes.</p><div class="tech-list"><span>JavaScript</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.io</span><span>HTML · CSS</span></div><div class="project-foot"><span class="private-note"><span>⌑</span> Código privado por ahora</span><a href="https://github.com/oskr2562" target="_blank" rel="noreferrer" class="text-link">Ver mi GitHub <b>↗</b></a></div></div>
+        </article>
+        <div class="project-aside"><span class="aside-star">✳</span><p>También estoy rediseñando este portfolio para contar mejor quién soy y mostrar mi proceso. <span>Más proyectos se irán sumando cuando estén listos para compartir.</span></p></div>
+      </section>
+
+      <section class="journey section-pad">
+        <div class="section-kicker"><span>03</span> / MI RECORRIDO</div>
+        <div class="journey-grid"><h2>Experiencia que<br><em>también suma.</em></h2><div class="journey-items"><div class="journey-item"><span class="journey-dot"></span><div><small>EXPERIENCIA</small><h3>Operaciones, logística y atención</h3><p>Experiencia previa en tareas operativas, organización de inventario, coordinación y trato con personas.</p></div></div><div class="journey-item"><span class="journey-dot dot-current"></span><div><small>ACTUALMENTE</small><h3>Aprender desarrollo web creando</h3><p>Dedico tiempo a estudiar, practicar y llevar ideas propias a proyectos que pueda seguir mejorando.</p></div></div></div></div>
+      </section>
+
+      <section class="contact" id="contacto"><div class="contact-inner"><div class="section-kicker"><span>04</span> / CONTACTO</div><h2>¿Hablamos?</h2><p>Estoy abierto a conectar con equipos, comunidades y oportunidades donde aportar una mirada práctica y construir soluciones web.</p><a class="button button-primary" href="https://www.linkedin.com/in/oscar-barrios-ar/" target="_blank" rel="noreferrer">Encontrame en LinkedIn <span>↗</span></a></div><div class="contact-orbit"></div></section>
+    </main>
+    <footer><a class="wordmark" href="#inicio"><span class="mark">OB</span><span>Oscar Barrios</span></a><span>Hecho con curiosidad en Rosario, Argentina.</span><a href="#inicio">VOLVER ARRIBA ↑</a></footer>
+  </div>
 </body>
 </html>
